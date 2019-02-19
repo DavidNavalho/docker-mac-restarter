@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.docker.monitor.restart</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/docker_restart.sh</string>
+        <string>$hostname</string>
+        <string>$port</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>$start_interval</integer>
+    <key>UserName</key>
+    <string>$username</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/$username/Library/Logs/com.docker.monitor.restart.stderr.log</string>
+    <key>StandardOutPath</key>
+    <string>/Users/$username/Library/Logs/com.docker.monitor.restart.stdout.log</string>
+</dict>
+</plist>
