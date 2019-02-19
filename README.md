@@ -30,7 +30,7 @@ Now you need to run the install script without sudo or root permissions:
 
 You will be now asked for the hostname and port you want to test. The most common scenario is to check the connection towards a web server running in Docker, so the default values are `localhost` for the hostname and `80` for the port, but you can set those values as you want.
 
-The only thing you need to have in mind is that you must specify a port exposed by a running container which has the `--restart` flag set to `always`, so the launch daemon can know when Docker is up and running again. You also need to specify the interval of seconds between connection tests (`300` seconds by default) and press y on your keyboard to finish the installation.
+The only thing you need to have in mind is that you must specify a port exposed by a running container which has the `--restart` flag set to `always`, so the launch daemon can know when Docker is up and running again. You also need to set the interval of seconds between tests (`300` seconds by default) and press y on your keyboard to finish the installation.
 
 ### How to check installation status
 
